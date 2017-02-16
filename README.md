@@ -28,3 +28,12 @@ NOTE: In this part, I try to give more information about the movie like the runt
 
 # UX Mockups (Complete App)
 
+- Portrait Mode (Phone Mode)
+
+![Portrait Image 1](https://github.com/jorlop89/Udacity-Project-2--Popular-Movies/blob/master/image-port-1.png)
+![Portrait Image 2](https://github.com/jorlop89/Udacity-Project-2--Popular-Movies/blob/master/image-port-2.png)
+
+Landscape Mode (Tablet Mode)
+
+![Landscape Image 1](https://github.com/jorlop89/Udacity-Project-2--Popular-Movies/blob/master/image-land.png)
+
