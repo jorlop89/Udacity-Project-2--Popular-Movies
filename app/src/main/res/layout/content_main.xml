@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_main">
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/movies_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalSpacing="0dp"
+        android:columnWidth="@dimen/image_view_width"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="0dp"
+        android:stretchMode="columnWidth"
+        tools:context="com.example.android.popularmovies.MainActivityFragment">
+
+    </GridView>
+
+
+    <!--<TextView
+        android:textColor="@color/colorPrimary"
+        android:text="@string/error_message"
+        android:id="@+id/text_error_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:visibility="invisible" />-->
+
+
+</FrameLayout>

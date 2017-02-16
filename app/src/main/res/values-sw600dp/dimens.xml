@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+
+    <!-- TextView Title Movie size -->
+    <dimen name="text_size_title_movie">52sp</dimen>
+
+    <!-- TextView Section Titles size -->
+    <dimen name="text_size_section_title">26sp</dimen>
+
+    <!-- TextView Section Content size -->
+    <dimen name="text_size_section_content">22sp</dimen>
+
+    <!-- TextView Favourite Description Text size -->
+    <dimen name="text_size_fav_content">18sp</dimen>
+
+    <!-- ImageView Movie Item Width and Height -->
+    <dimen name="image_view_width">200dp</dimen>
+    <dimen name="image_view_height">285dp</dimen>
+    <dimen name="image_view_width_land">240dp</dimen>
+    <dimen name="image_view_height_land">345dp</dimen>
+
+    <!-- ImageView Detail Fragment Width and Height -->
+    <dimen name="image_view_width_detail">160dp</dimen>
+    <dimen name="image_view_height_detail">260dp</dimen>
+
+
+
+
+</resources>

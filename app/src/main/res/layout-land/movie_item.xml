@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/movie_image"
+    android:layout_width="@dimen/image_view_width_land"
+    android:layout_height="@dimen/image_view_height_land"
+    android:scaleType="centerCrop"
+    android:adjustViewBounds="true"
+    android:contentDescription="@string/movie_image" />

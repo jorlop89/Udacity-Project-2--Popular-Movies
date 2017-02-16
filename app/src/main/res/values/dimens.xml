@@ -1,0 +1,31 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- TextView Title Movie size -->
+    <dimen name="text_size_title_movie">40sp</dimen>
+
+    <!-- TextView Section Titles size -->
+    <dimen name="text_size_section_title">20sp</dimen>
+
+    <!-- TextView Section Content size -->
+    <dimen name="text_size_section_content">18sp</dimen>
+
+    <!-- TextView Favourite Description Text size -->
+    <dimen name="text_size_fav_content">16sp</dimen>
+
+    <!-- ImageView Section Width and Height -->
+    <dimen name="image_view_width">180dp</dimen>
+    <dimen name="image_view_height">260dp</dimen>
+    <dimen name="image_view_width_land">210dp</dimen>
+    <dimen name="image_view_height_land">287dp</dimen>
+
+    <!-- ImageView Detail Fragment Width and Height -->
+    <dimen name="image_view_width_detail">140dp</dimen>
+    <dimen name="image_view_height_detail">230dp</dimen>
+
+
+
+</resources>
