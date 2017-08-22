@@ -36,6 +36,9 @@ public class FetchMovieComponentsTask extends AsyncTask<String,Void,String>{
         if (params.length == 0) {
             return null;
         }
+
+
+
         Uri builtUri = null;
         mMovieComponent = params[0];
         if(mMovieComponent != null) {

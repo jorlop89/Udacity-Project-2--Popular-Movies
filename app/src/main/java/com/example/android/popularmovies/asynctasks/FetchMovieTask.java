@@ -46,6 +46,7 @@ public class FetchMovieTask extends AsyncTask<String,Void, String>{
             return null;
         }
 
+
         String sortingCriteria = params[0];
         String response = null;
         Uri builtUri = null;
@@ -109,6 +110,7 @@ public class FetchMovieTask extends AsyncTask<String,Void, String>{
         images.clear();
         moviesList.clear();
 
+
         try{
             if(jsonString != null){
 
@@ -144,6 +146,8 @@ public class FetchMovieTask extends AsyncTask<String,Void, String>{
                     }
                     movieItem.setRatingAvg(movie.getString("vote_average"));
 
+
+
                     FetchMovieComponentsTask fetchReviews = new FetchMovieComponentsTask(movieItem, NetworkUtils.reviews);
                     fetchReviews.execute(NetworkUtils.reviews);
 
@@ -164,6 +168,7 @@ public class FetchMovieTask extends AsyncTask<String,Void, String>{
         catch (JSONException e){
             e.printStackTrace();
         }
+
     }
 
     public static String getJSON (Uri builtUri){

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.android.popularmovies.R;
@@ -15,10 +16,14 @@ import static com.example.android.popularmovies.adapters.MovieTrailerListAdapter
 public class MovieTrailerViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
     TextView titleTrailer;
+    ImageView thumbnailTrailer;
+
+
 
     public MovieTrailerViewHolder(View itemView) {
         super(itemView);
         titleTrailer = (TextView) itemView.findViewById(R.id.trailer_title);
+        thumbnailTrailer = (ImageView) itemView.findViewById(R.id.imageTrailerThumbnail);
         itemView.setOnClickListener(this);
     }
 

@@ -1,40 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="56dp">
+    android:orientation="horizontal"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:src="@android:drawable/ic_media_play"
-            android:tint="@color/colorPrimary"
+            android:id="@+id/imageTrailerThumbnail"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
             android:contentDescription="@string/trailer_play_image"/>
 
         <TextView
             android:id="@+id/trailer_title"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
             android:gravity="center"
-            android:textSize="@dimen/text_size_section_content"
             android:textColor="@color/colorPrimary"
             android:text="@string/trailers_title"
             android:hint="@string/trailers_title"/>
 
-
-
     </LinearLayout>
-    <View
-        android:background="@color/colorPrimary"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_margin="8dp" />
-
 
 </LinearLayout>

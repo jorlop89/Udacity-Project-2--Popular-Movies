@@ -34,6 +34,8 @@
                     android:layout_width="match_parent"
                     android:textColor="@color/colorTitle"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:padding="16dp"
                     android:textSize="@dimen/text_size_title_movie"
                     android:gravity="center"
@@ -99,85 +101,103 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="@dimen/activity_horizontal_margin"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="@dimen/text_size_section_title"
-                        android:text="@string/release_year"/>
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/release_year"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textSize="@dimen/text_size_section_title" />
 
                     <View
-                        android:background="@color/colorPrimary"
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:layout_marginBottom="4dp"
+                        android:background="@color/colorPrimary" />
 
                     <TextView
                         android:id="@+id/movie_year"
-                        android:textSize="@dimen/text_size_section_content"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:ignore="SelectableText" />
+                        android:fontFamily="sans-serif-light"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:textSize="@dimen/text_size_section_content"
+                        tools:ignore="SelectableText"
+                        tools:text="2000" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="@dimen/text_size_section_title"
-                        android:text="@string/average_rate"/>
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/average_rate"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textSize="@dimen/text_size_section_title" />
 
                     <View
-                        android:background="@color/colorPrimary"
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:layout_marginBottom="4dp"
+                        android:background="@color/colorPrimary" />
 
                     <TextView
                         android:id="@+id/movie_rate"
-                        android:textSize="@dimen/text_size_section_content"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:ignore="SelectableText" />
+                        android:fontFamily="sans-serif-light"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:textSize="@dimen/text_size_section_content"
+                        tools:ignore="SelectableText"
+                        tools:text="7.7/10" />
 
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="@dimen/text_size_section_title"
-                        android:text="@string/runtime"/>
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/runtime"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textSize="@dimen/text_size_section_title" />
 
                     <View
-                        android:background="@color/colorPrimary"
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:layout_marginBottom="4dp"
+                        android:background="@color/colorPrimary" />
 
                     <TextView
                         android:id="@+id/movie_runtime"
-                        android:textSize="@dimen/text_size_section_content"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:textSize="@dimen/text_size_section_content"
                         tools:ignore="SelectableText" />
 
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="@dimen/text_size_section_title"
-                        android:text="@string/genres"/>
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/genres"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textSize="@dimen/text_size_section_title" />
 
                     <View
-                        android:background="@color/colorPrimary"
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:layout_marginBottom="4dp"
+                        android:background="@color/colorPrimary" />
 
                     <TextView
                         android:id="@+id/movie_genres"
-                        android:textSize="@dimen/text_size_section_content"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:textSize="@dimen/text_size_section_content"
                         tools:ignore="SelectableText" />
 
 
@@ -190,9 +210,12 @@
                 android:layout_height="match_parent"
                 android:padding="8dp"
                 android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                     android:layout_marginLeft="8dp"
                     android:textSize="@dimen/text_size_section_title"
                     android:text="@string/plot_header"
@@ -211,6 +234,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
                     android:textSize="@dimen/text_size_section_content"
                     tools:ignore="SelectableText" />
 
@@ -226,6 +251,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                     android:layout_marginLeft="8dp"
                     android:textSize="@dimen/text_size_section_title"
                     android:text="@string/trailers_header"
@@ -241,26 +268,27 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
 
                     <android.support.v7.widget.RecyclerView
                         android:id="@+id/recycler_view_movies"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
                         android:visibility="visible"/>
 
                     <TextView
                         android:id="@+id/text_view_trailers"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                         android:layout_margin="8dp"
                         android:textSize="@dimen/text_size_section_content"
                         android:visibility="invisible"/>
 
                 </FrameLayout>
-
-
-
 
             </LinearLayout>
 
@@ -273,6 +301,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                     android:layout_marginLeft="8dp"
                     android:textSize="@dimen/text_size_section_title"
                     android:text="@string/review_header"
@@ -306,11 +336,7 @@
 
                 </FrameLayout>
 
-
-
             </LinearLayout>
-
-
 
         </LinearLayout>
 

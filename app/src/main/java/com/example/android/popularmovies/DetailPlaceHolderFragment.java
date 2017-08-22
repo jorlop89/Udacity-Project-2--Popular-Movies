@@ -7,8 +7,10 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -62,6 +64,7 @@ public class DetailPlaceHolderFragment extends Fragment implements MovieTrailerL
     public MovieTrailerListAdapter movieTrailerListAdapter;
 
     public DetailPlaceHolderFragment(){
+
 
     }
 
@@ -145,8 +148,6 @@ public class DetailPlaceHolderFragment extends Fragment implements MovieTrailerL
             else{
                 movieGenres.setText(getResources().getString(R.string.no_genres_available));
             }
-
-
 
 
             String movie_image_background = NetworkUtils.MOVIE_IMAGE_BASE_URL + NetworkUtils.MOVIE_IMAGE_SIZE_500 + movie.getImageBackground();
@@ -339,7 +340,29 @@ public class DetailPlaceHolderFragment extends Fragment implements MovieTrailerL
 
         //Create the RecyclerView of trailers
 
-        LinearLayoutManager layoutManager1 = new LinearLayoutManager(getActivity());
+        /* Test the resolution of the screen */
+        DisplayMetrics dMetrics = new DisplayMetrics();
+        getActivity().getWindowManager().getDefaultDisplay().getMetrics(dMetrics);
+        float density = dMetrics.density;
+        int width = Math.round(dMetrics.widthPixels / density);
+        int height = Math.round(dMetrics.heightPixels / density);
+
+        int spanCount;
+
+        if(height > width && width < 480){
+            spanCount = 2;
+        }
+
+        else if (height > width && (width > 480 && width < 720)){
+            spanCount = 3;
+        }
+
+        else{
+            spanCount = 4;
+        }
+
+
+        GridLayoutManager layoutManager1 = new GridLayoutManager(getActivity(), spanCount);
 
         movieTrailers = (RecyclerView) v.findViewById(R.id.recycler_view_movies);
         movieTrailers.setLayoutManager(layoutManager1);

@@ -28,15 +28,11 @@ public class MainActivityFragment extends Fragment implements AdapterView.OnItem
     /*New*/
     public static int pos;
     public boolean mTwoPane;
-    /*New*/
-
-    public MainActivityFragment() {
-
-    }
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
 
         DisplayMetrics dMetrics = new DisplayMetrics();
         getActivity().getWindowManager().getDefaultDisplay().getMetrics(dMetrics);
@@ -48,8 +44,6 @@ public class MainActivityFragment extends Fragment implements AdapterView.OnItem
         if(height > width || width < 720){
             mTwoPane = false;
         }
-
-
 
         /*Two pane mode*/
         else{
@@ -70,7 +64,6 @@ public class MainActivityFragment extends Fragment implements AdapterView.OnItem
             updateMovies();
         }
 
-        super.onCreate(savedInstanceState);
 
     }
 
@@ -78,7 +71,6 @@ public class MainActivityFragment extends Fragment implements AdapterView.OnItem
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
 
         View rootView = inflater.inflate(R.layout.content_main, container, false);
         gridView = (GridView) rootView.findViewById(R.id.movies_grid);

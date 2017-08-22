@@ -13,8 +13,6 @@ import com.example.android.popularmovies.asynctasks.FetchMovieTask;
 
 public class MainActivity extends AppCompatActivity implements OnMovieSelectionListener{
 
-    public MainActivity() {
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
