@@ -4,10 +4,11 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <fragment android:id="@+id/fragmentdetail"
+    <fragment
+        android:id="@+id/fragmentdetail"
         android:name="com.example.android.popularmovies.DetailPlaceHolderFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout="@layout/content_detail"/>
+        tools:layout="@layout/content_detail" />
 
 </LinearLayout>
